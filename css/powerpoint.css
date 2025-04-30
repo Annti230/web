@@ -1,0 +1,145 @@
+@charset "utf-8";
+/* CSS Document */
+
+.abgne-block-20110806 {
+		max-width:810px;
+		min-height:0;
+/*		height: 533px;*/
+		margin-left:0;
+		overflow: hidden;
+		position:relative;
+	}
+	.abgne-block-20110806 * {
+		margin: 0;
+		padding: 0;
+		border: none;
+	}
+	.abgne-block-20110806 ul, .abgne-block-20110806 li {
+		list-style: none;
+	}
+	.abgne-block-20110806 ul {
+/*		position: absolute;
+		right:0;
+		top:0;*/
+		z-index:11;
+	}
+section.webBox .abgne-block-20110806 li {
+	clear:both;
+		padding:0;
+		padding-bottom:0.45%;
+		padding-right:0.5%;
+	}
+	.abgne-block-20110806 li a {
+		display: block;
+		width: 50px;
+		height: 50px;
+/*		border: 1px solid #FFF;*/
+	}
+	.abgne-block-20110806 li a:hover {
+/*		border: 1px solid #eeeeee;*/
+	}
+section.webBox .abgne-block-20110806 li a img {
+		border: none;
+		width:100%;
+		height:auto;
+	}
+.abgne-block-20110806 .Clear{
+	display:none;
+	
+}
+@media screen and (max-width: 640px){ 
+.abgne-block-20110806 {
+		max-width:810px;
+		min-height:430px;
+/*		height: 533px;*/
+		margin-left:0;
+		overflow: hidden;
+		position:relative;
+	}
+	.abgne-block-20110806 * {
+		margin: 0;
+		padding: 0;
+		border: none;
+	}
+	.abgne-block-20110806 ul, .abgne-block-20110806 li {
+		list-style: none;
+	}
+	.abgne-block-20110806 ul {
+/*		position: absolute;
+		right:0;
+		top:0;*/
+
+		z-index:11;
+	}
+section.webBox .abgne-block-20110806 li {
+	clear: none;
+		padding:0;
+		padding-bottom:0.45%;
+		padding-right:0.5%;
+	}
+	.abgne-block-20110806 li a {
+		display: block;
+		width: 50px;
+		height: 50px;
+/*		border: 1px solid #FFF;*/
+	}
+	.abgne-block-20110806 li a:hover {
+/*		border: 1px solid #eeeeee;*/
+	}
+section.webBox .abgne-block-20110806 li a img {
+		border: none;
+		width:100%;
+		height:auto;
+	}
+section.webBox .abgne-block-20110806 li a{
+	
+}
+section.webBox .abgne-block-20110806 a{
+	width:90%;
+}
+.abgne-block-20110806 .Clear{
+	display: block;
+	clear:both;
+	
+}
+}
+@media screen and (max-width: 585px){ 
+.abgne-block-20110806 {
+		max-width:810px;
+		min-height:450px;
+/*		height: 533px;*/
+		margin-left:0;
+		overflow: hidden;
+		position:relative;
+}
+}
+@media screen and (max-width: 450px){ 
+.abgne-block-20110806 {
+		max-width:810px;
+		min-height:365px;
+/*		height: 533px;*/
+		margin-left:0;
+		overflow: hidden;
+		position:relative;
+}
+}
+@media screen and (max-width: 400px){ 
+.abgne-block-20110806 {
+		max-width:810px;
+		min-height:335px;
+/*		height: 533px;*/
+		margin-left:0;
+		overflow: hidden;
+		position:relative;
+}
+}
+@media screen and (max-width: 350px){ 
+.abgne-block-20110806 {
+		max-width:810px;
+		min-height:305px;
+/*		height: 533px;*/
+		margin-left:0;
+		overflow: hidden;
+		position:relative;
+}
+}

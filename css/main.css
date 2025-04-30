@@ -1,0 +1,1074 @@
+@charset "utf-8";
+/* CSS Document */
+
+body,html,table,h1,h2,h3,h4,h5,h6,td,th,div,ul,li,p {
+	margin:0 auto;
+	padding:0;
+	}
+body,html{
+	width:100%;
+	height:auto;
+	-webkit-text-size-adjust:none;
+	letter-spacing:1px;
+
+
+}
+
+.indexBg{
+	background-image:url(../images/bodyBg1.png);
+	background-size:100% auto;
+}
+footer{
+	background-color:#FFF; 
+	border-top: #000 1px solid;
+	text-align:right;
+	font-size:12px;
+	line-height:25px;
+	letter-spacing:1px;
+	position:fixed;
+	bottom:0;
+	width:100%;
+	height:25px;
+	z-index:11;
+	
+}
+footer span{
+	visibility:hidden;
+	
+}
+footer p{
+	width:98%;
+	
+}
+footer a{
+	text-decoration:none;
+	color:#000;
+}
+footer a:hover{
+	color:#666;
+	
+}
+footer.small{
+	display:none;
+	
+}
+nav.indexHome{
+	-webkit-user-select:none;
+	height:100%;
+	width:21%;
+	min-width:21%;
+	font-family: 'Playfair Display SC', serif;
+	font-size:19px;
+	position:fixed;
+	*left:0;
+	
+}
+
+nav.indexHome ul{
+	position: relative;
+	top:6%;
+	z-index:5;
+	
+}
+nav.indexHome ul li{
+	padding-bottom:20px;
+	
+}
+nav.indexHome li a{
+	position:relative;
+	color:#000;
+	text-decoration:none;
+	padding-left:15px;
+	padding-right:15px;
+
+}
+nav.indexHome li a:before{
+	content:"///////////////////";
+	display:block;
+	letter-spacing:0px;
+	letter-spacing:-3.3px\9;
+	text-indent:-5px;
+	position:absolute;
+	bottom:37px;
+	bottom:42px\9;
+	height:4px;
+	height:1px\9;
+	[;letter-spacing:-3.3px;] 
+
+	
+}
+nav.indexHome ul li a:hover,
+nav.indexHome ul li.Currently a{
+	background-color:#ffff00;
+	
+}
+nav.indexHome .logo{
+	position: absolute;
+	bottom:7%;
+	margin-left:10%;
+	z-index:4;
+	
+}
+nav.indexHome .logo a img{
+	width:100%;
+	height:auto;
+	
+}
+nav.SmallInner{
+	display:none;
+	
+}
+.nav{
+	-webkit-user-select:none;
+	height:100%;
+	width:21%;
+	min-width:21%;
+	font-family: 'Playfair Display SC', serif;
+	font-size:19px;
+	position:fixed;
+	*left:0;
+	
+}
+
+.nav ul{
+	position: relative;
+	top:6%;
+	z-index:5;
+	
+}
+.nav ul li{
+	padding-bottom:20px;
+	
+}
+.nav li a{
+	position:relative;
+	color:#000;
+	text-decoration:none;
+	padding-left:15px;
+	padding-right:15px;
+
+}
+.nav li a:before{
+	content:"///////////////////";
+	display:block;
+	letter-spacing:0px;
+	letter-spacing:-3.3px\9;
+	text-indent:-5px;
+	position:absolute;
+	bottom:37px;
+	bottom:42px\9;
+	height:4px;
+	height:1px\9;
+	[;letter-spacing:-3.3px;] 
+	
+}
+.nav ul li a:hover,
+.nav ul li.Currently a{
+	background-color:#ffff00;
+	
+}
+.nav .logo{
+	position: absolute;
+	bottom:7%;
+	margin-left:10%;
+	z-index:4;
+	
+}
+.nav .logo a img{
+	width:100%;
+	height:auto;
+	
+}
+.contentBox{
+    height: 100%;
+    margin-left: 21%;
+	padding-left:5%;
+	width:74%;
+
+
+}
+
+.contentBox h1{
+	width:643px;
+	height:178px;
+	text-indent:-9999px;
+	background-image:url(../images/logo.png);
+	position:absolute;
+	left:52%;
+	top:48%;
+	margin-top:-89px;
+	margin-left:-321px;
+	
+}
+
+header{
+	-webkit-user-select:none;
+	margin-top:15px;
+	font-family: 'Playfair Display SC', serif;
+	font-size:35px;
+	text-indent:55px;
+	position:relative;
+	
+	
+}
+header:after{
+	display:block;
+	content:"△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽";
+	position:absolute;
+	color: #CCC;
+	font-size:17px;
+	letter-spacing:-10px;
+	text-indent:0;
+
+	
+	width:85%;
+	overflow:hidden;
+	
+	
+	 [;content:"△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽";] 
+	[;font-size:24px;] 
+	[;letter-spacing:-13px;]
+	
+	
+}
+
+header span{
+	background-color:#000;
+	width:45px;
+	height:10px;
+	display:block;
+	position:absolute;
+	top:25px;	
+	*margin-left:-50px;
+}
+.contentBox nav.home{
+	position:inherit;
+	font-family:Arial, Helvetica, sans-serif;
+	padding:25px 0;
+    text-indent: 20px;
+	*height:30px;
+	width:80%;
+	*margin-left:390px;
+	[;padding-top: 35px;]
+		*padding-top:0;
+}
+.contentBox nav.home:before{
+    color: #FF4C43;
+    content: "▼";
+    display: block;
+    font-size: 16px;
+    position: absolute;
+    text-indent: 0;
+	padding-top:4px;
+	
+}
+.contentBox nav.home a{
+	font-size:12px;
+	color:#666;
+	text-decoration:none;
+
+
+	
+}
+
+.contentBox nav.home a:hover{
+	color: #000;
+	
+}
+section.webBox{
+	font-size:12px;
+	color:#666;
+	*margin-top:35px;
+	margin-bottom:5%;
+	margin-top:5%;
+	margin-right:5%;
+	overflow:auto;
+	
+}
+section.webBox ul{
+}
+section.webBox ul li{
+	float:left;
+	list-style:none;
+	padding-bottom:5%;
+	padding-right:3%;
+	padding-left:3%;
+
+
+	
+}
+
+section.webBox li a{
+	text-decoration:none;
+	color: #FFF;
+	opacity:0.7;
+filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=70)'; *filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+	
+}
+
+section.webBox li a:hover{
+	opacity:1;
+	
+}
+section.webBox li a img{
+		border:#eeeeee 5px solid;
+}
+section.webBox ul.print li{
+	padding:40px 0;
+	border-bottom:1px #eeeeee solid;
+	
+}
+section.webBox ul.print li img{		
+     border:#eeeeee 5px solid;
+	 width:96%;
+	 height:auto;
+}
+section.webBox ul.print li:first-child{
+	padding-top:0;
+	
+}
+
+section.webBox ul.print li:last-child{
+	border-bottom: none;
+	
+}
+/*----------------------------app幾何圖形頁面----------*/
+section.webBox ul.appList{
+	
+}
+section.webBox ul.appList li{
+	float:left;
+	padding-left:4%;
+	padding-right:4%;
+	padding-bottom:8%;
+	
+}
+section.webBox ul.appList li a{
+	display:block;
+	width:160px;
+	height:160px;
+	text-align:center;
+	line-height:160px;
+
+	
+}
+
+section.webBox ul.appList li a span{
+	display:none;
+	color:#555;
+}
+section.webBox ul.appList li a:hover span{
+	display: block;
+}
+section.webBox ul.appList li a.A1{
+	background-color:#d6d8d9;/*淺灰正方形*/	transition:all .7s .5s;
+	-webkit-transition:all .7s .5s;
+	
+}
+section.webBox ul.appList li a.A1:hover{
+	border-radius:80%;/*淺灰正方形---變藍圓形*/
+	background-color:#01b5fb;
+	behavior: url(ie-css3.htc); /* 使用ie-css3 */
+
+	
+}
+section.webBox ul.appList li a.A2{
+	background-color:#d6d8d9;/*淺灰圓形*/
+	border-radius:80%;	transition:all .7s .5s;
+	-webkit-transition:all .7s .5s;
+	behavior: url(ie-css3.htc); /* 使用ie-css3 */	
+	
+}
+section.webBox ul.appList li a.A2:hover{
+	background-color:#01c56b;/*淺灰圓形---變綠正方形*/
+	border-radius:0px;	transition:all .7s .5s;
+	-webkit-transition:all .7s .5s;
+	behavior: url(ie-css3.htc); /* 使用ie-css3 */	
+	
+}
+section.webBox ul.appList li a.A3{
+	background-color:#9b9b9a;/*深灰正方形*/	transition:all .7s .5s;
+	-webkit-transition:all .7s .5s;
+}
+section.webBox ul.appList li a.A3:hover{
+	background-color:#01c56b;/*深灰正方形---變綠圓型*/	transition:all .7s .5s;
+	-webkit-transition:all .7s .5s;
+	border-radius:80%;
+	behavior: url(ie-css3.htc); /* 使用ie-css3 */
+}
+section.webBox ul.appList li a.A4{
+	background-color:#9b9b9a;/*深灰圓形*/
+	border-radius:80%;
+	behavior: url(ie-css3.htc); /* 使用ie-css3 */	transition:all .7s .5s;
+	-webkit-transition:all .7s .5s;
+}
+section.webBox ul.appList li a.A4:hover{
+	background-color:#01b5fb;/*深灰圓形---變藍正方形*/
+	border-radius:0px;	transition:all .7s .5s;
+	-webkit-transition:all .7s .5s;
+	behavior: url(ie-css3.htc); /* 使用ie-css3 */
+}
+section.webBox ul.appList li a.A5{
+	background-color:#01c56b;/*綠正方形*/	transition:all .7s .5s;
+	-webkit-transition:all .7s .5s;
+}
+section.webBox ul.appList li a.A5:hover{
+	background-color:#9b9b9a;/*綠正方形---變深灰圓形*/	transition:all .7s .5s;
+	-webkit-transition:all .7s .5s;
+	border-radius:80%;
+	behavior: url(ie-css3.htc); /* 使用ie-css3 */
+}
+section.webBox ul.appList li a.A6{
+    background-color:#01c56b;/*綠圓形*/
+	border-radius:80%;
+	behavior: url(ie-css3.htc); /* 使用ie-css3 */	transition:all .7s .5s;
+	-webkit-transition:all .7s .5s;
+}
+section.webBox ul.appList li a.A6:hover{
+    background-color:#d6d8d9;/*綠圓形---變淺灰正方形*/
+	border-radius:0px;	transition:all .7s .5s;
+	-webkit-transition:all .7s .5s;
+	behavior: url(ie-css3.htc); /* 使用ie-css3 */
+}
+section.webBox ul.appList li a.A7{
+    background-color:#01b5fb;/*藍正方形*/	transition:all .7s .5s;
+	-webkit-transition:all .7s .5s;
+}
+section.webBox ul.appList li a.A7:hover{
+    background-color:#d6d8d9;/*藍正方形---變淺灰圓形*/	transition:all .7s .5s;
+	-webkit-transition:all .7s .5s;
+	border-radius:80%;
+	behavior: url(ie-css3.htc); /* 使用ie-css3 */
+}
+section.webBox ul.appList li a.A8{
+	background-color:#01b5fb;/*藍圓形*/
+	border-radius:80%;	
+	behavior: url(ie-css3.htc); /* 使用ie-css3 */	transition:all .7s .5s;
+	-webkit-transition:all .7s .5s;
+}
+section.webBox ul.appList li a.A8:hover{
+	background-color:#9b9b9a;/*藍圓形---變深灰正方形*/
+	border-radius:0px;	transition:all .7s .5s;
+	-webkit-transition:all .7s .5s;
+	behavior: url(ie-css3.htc); /* 使用ie-css3 */
+}
+
+/*----------------------------app幾何圖形頁面----------*/
+
+.about{
+	position:relative;
+	font-size:13px;
+	line-height:1.8;
+	letter-spacing:1;
+	margin-right:5%;
+	
+	
+	
+}
+.about p.black{
+	color:#000;
+}
+.about .me{
+	padding-right:3%;
+	margin-bottom:3%;
+	float:left;
+}
+.about .me .annti{
+	width:170px;
+	height:214px;
+	background-image:url(../images/me.jpg);
+	margin-bottom:5%;
+	margin-right:5%;
+	
+}
+.about .me .aboutMe{
+	float:left;
+	
+}
+.about .Info{
+	float: left;
+	padding-left:3%;
+    border-left: 1px dashed #999999;
+	margin-bottom:3%;
+	
+}
+a.UrlLinks{
+	color:#FFF;
+	opacity:0;
+filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=0)'; *filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+background-color:#888;
+padding:0 3px;
+width:0;
+height:0;
+margin:0;
+	border-radius:5px;
+	behavior: url(ie-css3.htc); /* 使用ie-css3 */
+}
+
+a.UrlLinks:hover{
+	color: #333;	
+}
+.menuBar{
+	display: none;
+	
+}
+
+@media screen and (max-width: 640px){ 
+
+.indexBg{
+	background-image:url(../images/bodyBg2.png);
+	background-size:100% auto;
+}
+footer.small{
+	display:block;
+	background-color:#FFF; 
+	border-top: #000 1px solid;
+	text-align: center;
+	font-size:12px;
+	line-height:2;
+	letter-spacing:1px;
+	position:fixed;
+	bottom:0;
+	width:100%;
+	height: auto;
+	z-index:11;
+	padding:1% 0;
+	
+}
+footer span{
+	visibility:hidden;
+	
+}
+footer p{
+	width:98%;
+	
+}
+
+footer a{
+	text-decoration:none;
+	color:#000;
+}
+footer a:hover{
+	color:#666;
+	
+}
+footer{
+	display:none;
+	
+}
+nav.indexHome{
+	-webkit-user-select:none;
+	display: block;
+	height: auto;
+	width:100%;
+	font-family: 'Playfair Display SC', serif;
+	font-size:24px;
+	position: relative;
+	margin:5% auto;
+	*left:0;
+	
+}
+
+nav.indexHome ul{
+	position:absolute;
+	top:0;
+	z-index:5;
+	padding-top:5%;
+	width:100%;
+	padding-bottom:70px;
+	
+}
+nav.indexHome ul li{
+	padding-bottom:2%;
+	list-style:none;
+	
+}
+nav.indexHome li a{
+	display:block;
+	position:relative;
+	color:#000;
+	text-decoration:none;
+
+	text-indent:10px;
+	padding:10px 15px;
+
+}
+nav.indexHome li a:before{
+	content:"///////////////////";
+	display:block;
+	letter-spacing:1px;
+	letter-spacing:1.3px\9;
+	text-indent:0px;
+	position:absolute;
+	bottom:50px;
+	bottom:55px\9;
+	height:4px;
+	height:1px\9;
+	[;letter-spacing:-3.3px;] 
+
+	
+}
+nav.indexHome ul li a:hover,
+nav.indexHome ul li.Currently a{
+	background-color:#ffff00;
+	
+}
+nav.indexHome .logo{
+	position: absolute;
+	bottom:7%;
+	margin-left:10%;
+	z-index:4;
+	
+}
+nav.indexHome .logo a img{
+	width:100%;
+	height:auto;
+	
+}
+
+
+.nav{
+	display:block;
+	height: 340px;
+	width:100%;
+	font-family: 'Playfair Display SC', serif;
+	font-size:24px;
+	position: relative;
+	margin:0 auto;
+	background-color: #FFF;
+	*left:0;
+	text-shadow:1px 1px #E0E0E0;
+	
+}
+
+.nav ul{
+	position:absolute;
+	top:0;
+	z-index:5;
+	padding-top:0;
+	width:100%;
+	padding-bottom:0;
+	
+}
+.nav ul li{
+	padding-bottom:0;
+	list-style:none;
+	border-top: #EFEFEF 1px solid;
+	border-bottom: #CCC 1px solid;
+	
+}
+.nav li a{
+	display:block;
+	position:relative;
+	color:#000;
+	text-decoration:none;
+
+	text-indent:10px;
+	padding:5px 15px;
+
+}
+.nav li a:before{
+	content:"///////////////////";
+	display: none;
+	letter-spacing:1px;
+	letter-spacing:1.3px\9;
+	text-indent:0px;
+	position:absolute;
+	bottom:50px;
+	bottom:55px\9;
+	height:4px;
+	height:1px\9;
+	[;letter-spacing:-3.3px;] 
+
+	
+}
+.nav ul li a:hover,
+.nav ul li.Currently a{
+	background-color:#ffff00;
+	
+}
+.nav .logo{
+	display:none;
+	position: absolute;
+	bottom:7%;
+	margin-left:10%;
+	z-index:4;
+	
+}
+.nav .logo a img{
+	width:100%;
+	height:auto;
+	
+}
+.contentBox{
+    height: 25%;
+    margin-left: 0;
+	padding-left:0;
+	width:90%;
+	margin:10% auto;
+
+
+}
+
+.contentBox h1{
+	width:100%;
+	height:0;
+	text-indent:-9999px;
+	background-image:url(../images/logo.png);
+	position: relative;
+	left:0;
+	top:0;
+	margin-top:0;
+	margin-left:0;
+	background-size:cover;
+	padding-bottom:27.682%;
+	margin:5% auto;
+	
+	
+}
+
+header{
+	-webkit-user-select:none;
+	margin-top:15px;
+	font-family: 'Playfair Display SC', serif;
+	font-size:35px;
+	text-indent:55px;
+	position:relative;
+	
+	
+}
+header:after{
+	display:block;
+	content:"△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽";
+	position:absolute;
+	color: #CCC;
+	font-size:17px;
+	letter-spacing:-10px;
+	text-indent:0;
+	width:100%;
+	overflow:hidden;
+	
+	
+	 [;content:"△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽△▽";] 
+	[;font-size:24px;] 
+	[;letter-spacing:-13px;]
+	
+	
+}
+
+header span{
+	background-color:#000;
+	width:45px;
+	height:10px;
+	display:block;
+	position:absolute;
+	top:25px;	
+	*margin-left:-50px;
+}
+.contentBox nav.home{
+	display:none;
+	position:inherit;
+	font-family:Arial, Helvetica, sans-serif;
+	padding:25px 0;
+    text-indent: 0px;
+	*height:30px;
+	width:90%;
+	*margin-left:390px;
+	[;padding-top: 35px;]
+		*padding-top:0;
+}
+.contentBox nav.home:before{
+    color: #FF4C43;
+    content: "▼";
+    display: block;
+    font-size: 16px;
+    position: absolute;
+    text-indent: -15px;
+	padding-top:8px;
+	
+}
+.contentBox nav.home a{
+	font-size:12px;
+	color:#666;
+	text-decoration:none;
+
+
+	
+}
+
+.contentBox nav.home a:hover{
+	color: #000;
+	
+}
+section.webBox{
+	font-size:13px;
+	color:#666;
+	margin:15% 0 80px 0;
+	overflow:auto;
+	
+}
+section.webBox ul{
+	margin:0 auto;
+}
+section.webBox ul li{
+	float:left;
+	list-style:none;
+	padding-bottom:5%;
+	padding-right:3%;
+	padding-left:7%;
+
+
+	
+}
+
+section.webBox li a{
+	text-decoration:none;
+	color:#666;
+	opacity:0.7;
+filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=70)'; *filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+	
+}
+
+section.webBox li a:hover{
+	opacity:1;
+	
+}
+section.webBox li a img{
+		border:#eeeeee 5px solid;
+}
+section.webBox ul.print li{
+	padding:40px 0;
+	border-bottom:1px #eeeeee solid;
+	
+}
+section.webBox ul.print li img{		
+     border:#eeeeee 5px solid;
+	 width:96%;
+	 height:auto;
+}
+section.webBox ul.print li:first-child{
+	padding-top:0;
+	
+}
+
+section.webBox ul.print li:last-child{
+	border-bottom: none;
+	
+}
+/*----------------------------app幾何圖形頁面----------*/
+section.webBox ul.appList{
+	margin-left:10%;
+	
+}
+section.webBox ul.appList li{
+	float:left;
+	padding-left:12%;
+	padding-right:4%;
+	padding-bottom:8%;
+	
+}
+section.webBox ul.appList li a{
+	display:block;
+	width:160px;
+	height:160px;
+	text-align:center;
+	line-height:160px;
+
+	
+}
+
+section.webBox ul.appList li a span{
+	display:none;
+}
+section.webBox ul.appList li a:hover span{
+	display: block;
+}
+section.webBox ul.appList li a.A1{
+	background-color:#d6d8d9;/*淺灰正方形*/	transition:all .7s .5s;
+	-webkit-transition:all .7s .5s;
+	
+}
+section.webBox ul.appList li a.A1:hover{
+	border-radius:80%;/*淺灰正方形---變藍圓形*/
+	background-color:#01b5fb;
+	behavior: url(ie-css3.htc); /* 使用ie-css3 */
+
+	
+}
+section.webBox ul.appList li a.A2{
+	background-color:#d6d8d9;/*淺灰圓形*/
+	border-radius:80%;	transition:all .7s .5s;
+	-webkit-transition:all .7s .5s;
+	behavior: url(ie-css3.htc); /* 使用ie-css3 */	
+	
+}
+section.webBox ul.appList li a.A2:hover{
+	background-color:#01c56b;/*淺灰圓形---變綠正方形*/
+	border-radius:0px;	transition:all .7s .5s;
+	-webkit-transition:all .7s .5s;
+	behavior: url(ie-css3.htc); /* 使用ie-css3 */	
+	
+}
+section.webBox ul.appList li a.A3{
+	background-color:#9b9b9a;/*深灰正方形*/	transition:all .7s .5s;
+	-webkit-transition:all .7s .5s;
+}
+section.webBox ul.appList li a.A3:hover{
+	background-color:#01c56b;/*深灰正方形---變綠圓型*/	transition:all .7s .5s;
+	-webkit-transition:all .7s .5s;
+	border-radius:80%;
+	behavior: url(ie-css3.htc); /* 使用ie-css3 */
+}
+section.webBox ul.appList li a.A4{
+	background-color:#9b9b9a;/*深灰圓形*/
+	border-radius:80%;
+	behavior: url(ie-css3.htc); /* 使用ie-css3 */	transition:all .7s .5s;
+	-webkit-transition:all .7s .5s;
+}
+section.webBox ul.appList li a.A4:hover{
+	background-color:#01b5fb;/*深灰圓形---變藍正方形*/
+	border-radius:0px;	transition:all .7s .5s;
+	-webkit-transition:all .7s .5s;
+	behavior: url(ie-css3.htc); /* 使用ie-css3 */
+}
+section.webBox ul.appList li a.A5{
+	background-color:#01c56b;/*綠正方形*/	transition:all .7s .5s;
+	-webkit-transition:all .7s .5s;
+}
+section.webBox ul.appList li a.A5:hover{
+	background-color:#9b9b9a;/*綠正方形---變深灰圓形*/	transition:all .7s .5s;
+	-webkit-transition:all .7s .5s;
+	border-radius:80%;
+	behavior: url(ie-css3.htc); /* 使用ie-css3 */
+}
+section.webBox ul.appList li a.A6{
+    background-color:#01c56b;/*綠圓形*/
+	border-radius:80%;
+	behavior: url(ie-css3.htc); /* 使用ie-css3 */	transition:all .7s .5s;
+	-webkit-transition:all .7s .5s;
+}
+section.webBox ul.appList li a.A6:hover{
+    background-color:#d6d8d9;/*綠圓形---變淺灰正方形*/
+	border-radius:0px;	transition:all .7s .5s;
+	-webkit-transition:all .7s .5s;
+	behavior: url(ie-css3.htc); /* 使用ie-css3 */
+}
+section.webBox ul.appList li a.A7{
+    background-color:#01b5fb;/*藍正方形*/	transition:all .7s .5s;
+	-webkit-transition:all .7s .5s;
+}
+section.webBox ul.appList li a.A7:hover{
+    background-color:#d6d8d9;/*藍正方形---變淺灰圓形*/	transition:all .7s .5s;
+	-webkit-transition:all .7s .5s;
+	border-radius:80%;
+	behavior: url(ie-css3.htc); /* 使用ie-css3 */
+}
+section.webBox ul.appList li a.A8{
+	background-color:#01b5fb;/*藍圓形*/
+	border-radius:80%;	
+	behavior: url(ie-css3.htc); /* 使用ie-css3 */	transition:all .7s .5s;
+	-webkit-transition:all .7s .5s;
+}
+section.webBox ul.appList li a.A8:hover{
+	background-color:#9b9b9a;/*藍圓形---變深灰正方形*/
+	border-radius:0px;	transition:all .7s .5s;
+	-webkit-transition:all .7s .5s;
+	behavior: url(ie-css3.htc); /* 使用ie-css3 */
+}
+
+/*----------------------------app幾何圖形頁面----------*/
+
+.about{
+	position:relative;
+	font-size:16px;
+	line-height:2;
+	letter-spacing:1;
+	margin-right:0;
+	
+	
+	
+}
+.about p.black{
+	color:#000;
+}
+.about .me{
+	padding-right:3%;
+	margin-bottom:3%;
+	float: none;
+}
+.about .me .annti{
+	width:230px;
+	height:230px;
+	background-image:url(../images/me01.png);
+	margin:0 auto;
+	margin-bottom:5%;
+	
+}
+.about .me .aboutMe{
+	float:left;
+	
+}
+.about .Info{
+	float: left;
+	padding-left:0;
+    border-left: none;
+	margin-bottom:15%;
+	
+}
+a.UrlLinks{
+	color:#168FD1;
+	opacity:0;
+filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=0)'; *filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+background-color: #AEAED7;
+padding:0 3px;
+}
+
+a.UrlLinks:hover{
+	color:#174866;
+	
+}
+.menuBar{
+	display:block;
+	background-color: #FFF;
+	height:80px;
+	color:#FFF;
+	border-bottom:#000 1px solid;
+
+}
+.menuBar a{
+	text-decoration:none;
+	color: #999;
+	display:block;
+	width:35px;
+	height:35px;
+	text-align:center;
+	vertical-align: middle;
+	background-color: #D9D9D9;
+	border-radius:50%;
+	font-size:20px;
+	line-height:35px;
+	box-shadow:1px 2px  #CCCCCC;
+
+	
+}
+.menuBar .Home{
+	float:left;
+	margin-top:20px;
+	margin-left:7px;
+
+	
+}
+.menuBar .logoA{
+	text-align:center;
+
+	
+}
+.menuBar .logoA img{
+	width:215px;
+	height:60px;
+	padding-top:10px;
+
+}
+
+
+}
