@@ -1,0 +1,66 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+html,
+body {
+  margin: 0px;
+  height: 100%;
+}
+/* a blue color as a generic focus style */
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+a {
+  text-decoration: none;
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin font-styles-16 {
+  font-family: var(--font-styles-font-family);
+  font-weight: var(--font-styles-16-font-weight);
+  font-size: var(--font-styles-16-font-size);
+  letter-spacing: var(--font-styles-16-letter-spacing);
+  line-height: var(--font-styles-16-line-height);
+  font-style: var(--font-styles-16-font-style);
+}
+@mixin font-styles-bold-18 {
+  font-family: var(--font-styles-font-family);
+  font-weight: var(--font-styles-bold-18-font-weight);
+  font-size: var(--font-styles-bold-18-font-size);
+  letter-spacing: var(--font-styles-bold-18-letter-spacing);
+  line-height: var(--font-styles-bold-18-line-height);
+  font-style: var(--font-styles-bold-18-font-style);
+}
+@mixin font-styles-24 {
+  font-family: var(--font-styles-font-family);
+  font-weight: var(--font-styles-24-font-weight);
+  font-size: var(--font-styles-24-font-size);
+  letter-spacing: var(--font-styles-24-letter-spacing);
+  line-height: var(--font-styles-24-line-height);
+  font-style: var(--font-styles-24-font-style);
+}
+@mixin font-styles-32 {
+  font-family: var(--font-styles-font-family);
+  font-weight: var(--font-styles-32-font-weight);
+  font-size: var(--font-styles-32-font-size);
+  letter-spacing: var(--font-styles-32-letter-spacing);
+  line-height: var(--font-styles-32-line-height);
+  font-style: var(--font-styles-32-font-style);
+}
+@mixin font-styles-72 {
+  font-family: var(--font-styles-font-family);
+  font-weight: var(--font-styles-72-font-weight);
+  font-size: var(--font-styles-72-font-size);
+  letter-spacing: var(--font-styles-72-letter-spacing);
+  line-height: var(--font-styles-72-line-height);
+  font-style: var(--font-styles-72-font-style);
+}

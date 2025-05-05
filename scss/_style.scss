@@ -1,0 +1,782 @@
+.one-page-light {
+  @extend .flex-center;
+  flex-direction: column;
+  position: relative;
+  background-color: #ffffff;
+}
+/* nav-bar */
+.nav-bar {
+  @extend .flex-center;
+  justify-content: space-between;
+  align-self: stretch;
+  position: sticky;
+  top: 0;
+  background-color: var(--collection-semantic-nav-bg);
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-color: var(--collection-semantic-logo);
+  z-index: 50;
+  width: 100%;
+  .nav {
+    @extend .flex-center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1440px;
+    padding: 30px 40px;
+  }
+  .logo {
+    position: relative;
+    width: 100%;
+    max-width: 302px;
+    color: var(--collection-semantic-logo);
+    svg {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+  .navigation {
+    @extend .flex-center;
+    justify-content: flex-end;
+    gap: 20px;
+    position: relative;
+  }
+}
+
+.navigation ul {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 25px;
+  position: relative;
+  flex: 0 0 auto;
+  li {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+}
+
+.navigation a {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  color: var(--collection-semantic-menu);
+  white-space: nowrap;
+  @include font-styles-16;
+  &:hover {
+    border-bottom: 3px solid var(--collection-semantic-logo);
+  }
+}
+
+/* mode切換 */
+.mode-toggle {
+  width: 75px;
+  height: 36px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.toggle-bg {
+  background-color: var(--collection-color-function-blue-200);
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 999px;
+  transition: background-color 0.4s;
+  @extend .flex-center;
+  justify-content: space-between;
+  padding: 0 6px;
+  box-sizing: border-box;
+}
+
+.toggle-icon {
+  z-index: 2;
+  transition: opacity 0.1s;
+}
+
+.toggle-ball {
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  width: 30px;
+  height: 30px;
+  background-color: var(--collection-color-function-blue-100);
+  box-shadow: 0px 1.5px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  transform: translateX(37px);
+  transition: transform 0.4s ease, background-color 0.4s ease;
+  z-index: 1;
+}
+/* 漢堡選單 */
+.hamburger-icon {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+  z-index: 100;
+  span {
+    width: 25px;
+    height: 3px;
+    background-color: var(--collection-semantic-logo);
+    border-radius: 2px;
+    transition: 0.3s;
+  }
+}
+
+// 漢堡展開選單
+.hamburger-icon {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  width: 30px;
+  height: 25px;
+  justify-content: center;
+  z-index: 101;
+  cursor: pointer;
+
+  span {
+    height: 3px;
+    background-color: var(--collection-semantic-logo);
+    border-radius: 2px;
+    transition: 0.3s;
+  }
+
+  &.active {
+    span:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+    span:nth-child(2) {
+      opacity: 0;
+    }
+    span:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  }
+}
+.menu-popup {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  top: 80px;
+  right: 0;
+  width: 100%;
+  background-color: var(--collection-semantic-nav-bg);
+  z-index: 99;
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    li {
+      text-align: center;
+      height: 70px;
+      line-height: 70px;
+      a {
+        color: var(--collection-color-neutral-black);
+        text-decoration: none;
+        font-size: 1.125rem;
+        padding: 15px 20px;
+        will-change: transform;
+        text-shadow: 0 0 0.3px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s cubic-bezier(0.25, 1.25, 0.5, 1),
+          color 0.3s ease-in-out;
+        &:hover,
+        &:active {
+          font-size: 1.25rem;
+          transform: scale(1.12);
+          color: var(--collection-semantic-logo);
+        }
+      }
+    }
+  }
+
+  &.show {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+    align-items: center;
+    border-bottom: 1px solid var(--collection-semantic-logo);
+    margin-top: 25px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08),
+      0px 10px 16px rgba(0, 0, 0, 0.12);
+    z-index: 20;
+  }
+}
+
+/* 主視覺輪播 */
+.slideshow-container {
+  @extend .flex-center;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 666px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.mySlides {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 666px;
+  @extend .flex-center;
+  justify-content: flex-start;
+  overflow: hidden;
+  opacity: 0;
+  z-index: 0;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s ease;
+  color: var(--collection-semantic-img-text-icon);
+  text-align: left;
+  pointer-events: none;
+  img {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.text-content {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease-out;
+  padding-left: 13%;
+  h4 {
+    color: var(--collection-semantic-img-text-icon);
+    margin: 0 0 10px;
+    transition: all 0.6s ease-out;
+    transition-delay: 0.2s;
+    @include font-styles-72;
+  }
+  h5 {
+    color: var(--collection-semantic-img-text-icon);
+    margin: 0;
+    transition: all 0.6s ease-out;
+    transition-delay: 0.4s;
+    @include font-styles-32;
+  }
+}
+
+.mySlides.active .text-content {
+  opacity: 1;
+  transform: translateY(10px);
+}
+
+.mySlides {
+  &.active {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+    z-index: 1;
+    pointer-events: auto;
+  }
+  &.prev-left,
+  .prev-right {
+    animation: slideOutLeft 0.5s forwards;
+    opacity: 0;
+    z-index: 0;
+  }
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 16px;
+  color: var(--collection-semantic-img-text-icon);
+  font-weight: bold;
+  font-size: 24px;
+  border-radius: 3px;
+  z-index: 2;
+  user-select: none;
+  transform: translateY(-50%);
+  transition: opacity 0.3s ease;
+  opacity: 0.6;
+  &:hover {
+    opacity: 1;
+  }
+}
+.prev {
+  left: 10px;
+}
+.next {
+  right: 10px;
+}
+
+.dots {
+  text-align: center;
+  z-index: 9;
+  position: absolute;
+  bottom: 10px;
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: var(--collection-semantic-img-text-icon);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease, transform 0.3s ease;
+    opacity: 0.5;
+    &.active {
+      height: 19px;
+      width: 19px;
+      background-color: var(--collection-semantic-img-text-icon);
+      transform: scale(1.2);
+      opacity: 0.8;
+    }
+  }
+}
+/* container-關於我 */
+.container {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  align-items: flex-start;
+  gap: 15px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  background-color: var(--collection-semantic-container-bg);
+}
+
+.about-me {
+  @extend .flex-center;
+  flex-direction: column;
+  gap: 30px;
+  padding: 60px 190px 25px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  .tag {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+}
+
+.title-name {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  color: var(--collection-semantic-h3-text);
+  @include font-styles-32;
+}
+.p-text {
+  @extend .flex-center;
+  justify-content: center;
+  gap: 60px;
+  position: relative;
+  align-self: center;
+  width: 78%;
+  flex: 0 0 auto;
+  p {
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    margin-top: -1px;
+    color: var(--collection-semantic-p);
+    @include font-styles-16;
+  }
+}
+
+/* container-商品列表 */
+.list-box {
+  @extend .flex-center;
+  flex-direction: column;
+  gap: 30px;
+  padding: 60px 0px 25px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px 30px;
+  padding: 0px 30px;
+  position: relative;
+  align-self: center;
+  max-width: 1440px;
+  flex: 0 0 auto;
+  .list-img {
+    width: 320px;
+    max-width: 100%;
+    height: auto;
+    gap: 20px;
+    @extend .flex-center;
+    flex-direction: column;
+    position: relative;
+    .vector {
+      position: relative;
+      width: 320px;
+      max-width: 100%;
+      height: auto;
+      flex-shrink: 0;
+    }
+  }
+}
+
+.list-title {
+  height: auto;
+  align-items: flex-start;
+  gap: 6px;
+  align-self: stretch;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  .product-name {
+    position: relative;
+    align-self: stretch;
+    height: 35px;
+    margin-top: -1px;
+    color: var(--collection-semantic-p);
+    text-align: center;
+    @include font-styles-bold-18;
+  }
+  p {
+    width: 80%;
+    align-self: center;
+    position: relative;
+    color: var(--collection-semantic-p);
+    @include font-styles-16;
+  }
+}
+
+.list-title span {
+  color: var(--collection-semantic-p);
+  @include font-styles-16;
+  span {
+    color: var(--collection-semantic-price);
+    display: block;
+  }
+}
+
+/* container-食用方法 */
+.usage-box {
+  @extend .flex-center;
+  flex-direction: column;
+  gap: 30px;
+  padding: 60px 30px 80px 25px;
+  align-self: center;
+  width: 100%;
+  max-width: 1440px;
+  flex: 0 0 auto;
+  background-color: var(--collection-semantic-using-bg);
+  border-radius: 80px;
+  overflow: hidden;
+  position: relative;
+}
+.tag-h {
+  @extend .flex-center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  .title-name-white {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    color: var(--collection-semantic-using-h3-text);
+    @include font-styles-32;
+  }
+}
+.usage-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  align-items: flex-start;
+  padding: 0 0 10px;
+  width: 100%;
+  position: relative;
+}
+
+.usage-icon-list {
+  flex: 0 0 calc(33.333% - 40px);
+  max-width: 390px;
+  min-width: 280px;
+  padding: 34px 40px;
+  box-sizing: border-box;
+  position: relative;
+  cursor: default;
+  @extend .flex-center;
+}
+
+.usage-icon {
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  gap: 26px;
+  display: flex;
+  position: relative;
+  @extend .flex-center;
+  &::after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 110%;
+    padding: 30px 40px;
+    background-color: white;
+    z-index: 1;
+
+    // 不規則圓形外觀
+    border-radius: 48% 52% 49% 51% / 50% 47% 53% 50%;
+    transition: transform 0.3s ease;
+  }
+
+  // 滑鼠移入時讓::after套用 jelly 動畫
+  &:hover::after {
+    animation: jellyWave 0.8s ease-in-out;
+    transform: translateX(-50%) translateY(0);
+    transform-origin: center;
+  }
+  .img-2 {
+    position: relative;
+    width: 153px;
+    height: 144px;
+    z-index: 2;
+  }
+}
+/* 果凍彈跳動畫 keyframes */
+@keyframes jellyWave {
+  0% {
+    transform: translateX(-50%) translateY(0);
+  }
+  30% {
+    transform: translateX(-50%) translateY(-6px) scale(1.03, 0.97);
+  }
+  50% {
+    transform: translateX(-50%) translateY(4px) scale(0.96, 1.04);
+  }
+  70% {
+    transform: translateX(-50%) translateY(-2px) scale(1.01, 0.99);
+  }
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+.usage-text {
+  flex-direction: column;
+  gap: 11px;
+  align-self: stretch;
+  width: 100%;
+  display: flex;
+  position: relative;
+  @extend .flex-center;
+  z-index: 2;
+
+  h6 {
+    position: relative;
+    align-self: stretch;
+    margin-top: -1px;
+    color: var(--collection-semantic-using);
+    text-align: center;
+    @include font-styles-24;
+  }
+
+  p {
+    position: relative;
+    align-self: stretch;
+    height: auto;
+    color: var(--collection-semantic-using);
+    text-align: center;
+    @include font-styles-16;
+  }
+}
+
+/* container-訂購方式 */
+.order-box {
+  flex-direction: column;
+  gap: 30px;
+  padding: 60px 125px 30px 125px;
+  @extend .flex-center;
+  justify-content: center;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  .order {
+    @extend .flex-center;
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+    align-self: center;
+    width: 75%;
+    flex: 0 0 auto;
+  }
+}
+
+.order-content {
+  flex-wrap: wrap;
+  gap: 95px 95px;
+  @extend .flex-center;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  .left,
+  .right {
+    @extend .flex-center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    position: relative;
+    flex: 1;
+    flex-grow: 1;
+  }
+}
+.left,
+.right {
+  h6 {
+    position: relative;
+    align-self: stretch;
+    margin-top: -1px;
+    color: var(--collection-semantic-h3-text);
+    @include font-styles-bold-18;
+  }
+  p {
+    position: relative;
+    align-self: stretch;
+    color: var(--collection-color-neutral-black);
+    @include font-styles-16;
+  }
+}
+
+/* footer-btn */
+.container .btn {
+  box-sizing: border-box;
+  @extend .flex-center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 0px 40px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+}
+
+.btn-order {
+  @extend .flex-center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  padding: 20px 50px;
+  position: relative;
+  flex: 0 0 auto;
+  width: 30%;
+  background-color: var(--collection-semantic-btn-default);
+  border-radius: 999px;
+  transition: background-color 0.4s ease; /* hover 柔順 */
+  p {
+    position: relative;
+    margin: 0; // 移除預設 margin
+    color: var(--collection-semantic-btn-text);
+    @include font-styles-24;
+    font-size: 1.25rem;
+  }
+  &:hover {
+    background-color: var(--collection-semantic-btn-hover);
+  }
+}
+
+.btn .go-top {
+  position: fixed;
+  width: 75px;
+  height: 75px;
+  bottom: 100px;
+  right: 80px;
+  cursor: pointer;
+  color: var(--collection-semantic-btn-default);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(40px); /* 初始向下位移 */
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  &.show {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0); /* 向上滑入 */
+  }
+  &:hover {
+    transform: scale(1.2) translateY(0); /* hover 放大，但保持位置 */
+  }
+}
+
+footer {
+  @extend .flex-center;
+  flex-direction: column;
+  height: 50px;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  background-color: var(--collection-semantic-using);
+  p {
+    position: relative;
+    width: fit-content;
+    color: var(--collection-semantic-using-h3-text);
+    white-space: nowrap;
+    @include font-styles-16;
+  }
+}
+
+/* 切換為 dark 模式時變化 */
+.one-page-light[data-collection-mode="dark"] .toggle-bg {
+  background-color: var(--collection-color-function-blue-800);
+}
+
+.one-page-light[data-collection-mode="dark"] .toggle-ball {
+  transform: translateX(0);
+}
+
+.one-page-light[data-collection-mode="dark"] .sun {
+  opacity: 0;
+}
+
+.one-page-light[data-collection-mode="dark"] .moon {
+  opacity: 1;
+}
+
+.one-page-light[data-collection-mode="light"] .sun {
+  opacity: 1;
+  padding-top: 3px;
+}
+
+.one-page-light[data-collection-mode="light"] .moon {
+  opacity: 0;
+}

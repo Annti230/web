@@ -1,0 +1,432 @@
+/* --- RWD 響應式 --- */
+/* --------------------------------------- */
+/* 1200px ↓：筆電、桌機小螢幕 (.laptop) */
+@media screen and (max-width: 1200px) {
+  .slideshow-container,
+  .mySlides {
+    height: 560px;
+  }
+  .about-me {
+    padding: 50px 100px 10px;
+  }
+  .p-text {
+    width: 100%;
+  }
+  .item {
+    width: 100%;
+  }
+  .usage-box {
+    width: 100%;
+  }
+
+  .text-content {
+    padding-left: 60px;
+  }
+  .order-box {
+    .order {
+      width: 85%;
+    }
+  }
+  .order-content {
+    gap: 60px;
+  }
+}
+
+/* --------------------------------------- */
+/* 992px ↓：平板橫放、小筆電 (.tablet-landscape) */
+@media screen and (max-width: 992px) {
+  .nav-bar {
+    .nav {
+      padding: 30px 20px;
+    }
+    .navigation {
+      gap: 0px;
+    }
+  }
+  .navigation ul {
+    padding: 0px 10px 0px 25px;
+    li {
+      gap: 5px;
+    }
+  }
+  .about-me {
+    padding: 40px 60px 10px;
+  }
+
+  .p-text {
+    flex-direction: column;
+    gap: 30px;
+    width: 90%;
+  }
+  .usage-box {
+    width: 100%;
+    border-radius: 40px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+  }
+  .usage-icon {
+    &::after {
+      content: "";
+      padding: 15px 30px;
+    }
+    .img-2 {
+      width: 120px;
+      height: auto;
+    }
+  }
+  .usage-list {
+    flex-wrap: nowrap;
+    gap: 0;
+  }
+
+  .usage-icon-list {
+    max-width: 290px;
+    min-width: 250px;
+  }
+
+  .order-box {
+    .order {
+      width: 100%;
+    }
+  }
+}
+
+/* --------------------------------------- */
+/* 768px ↓：平板直放、大手機 (.tablet) */
+@media screen and (max-width: 768px) {
+  html {
+    scroll-padding-top: 120px; // 桌機預設
+  }
+
+  .slideshow-container,
+  .mySlides {
+    height: 460px;
+  }
+
+  .nav-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    .nav {
+      padding: 5px;
+    }
+    .logo {
+      svg {
+        width: 85%;
+      }
+    }
+
+    .navigation {
+      display: flex; // 保留整個 navigation 區塊
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 15px;
+    }
+  }
+  .navigation ul {
+    display: none; // 僅隱藏原本的選單
+  }
+  .hamburger-icon {
+    display: flex;
+  }
+
+  // .navigation {
+  //   display: none;
+  // }
+
+  .menu-popup.show {
+    display: flex;
+  }
+
+  .text-content {
+    padding-left: 55px;
+    h4 {
+      font-size: 3rem;
+    }
+    h5 {
+      font-size: 1.75rem;
+    }
+  }
+
+  .about-me {
+    padding: 30px 30px 10px;
+  }
+
+  .p-text {
+    width: 75%;
+  }
+  .item {
+    .list-img {
+      width: 224px;
+      .vector {
+        width: 224px;
+      }
+    }
+  }
+  .list-box {
+    padding-top: 30px;
+  }
+  .usage-box {
+    width: 100%;
+  }
+  .usage-list {
+    gap: 5px;
+  }
+  .usage-icon-list {
+    padding: 24px 20px;
+    max-width: 230px;
+    min-width: 180px;
+  }
+  .usage-box {
+    padding-top: 30px;
+  }
+  .usage-icon {
+    gap: 60px;
+    &::after {
+      padding: 20px 20px 0px 20px;
+      height: 45%;
+      top: -30px;
+    }
+    .img-2 {
+      width: 120px;
+      height: auto;
+      flex-shrink: 0;
+    }
+  }
+
+  .usage-text {
+    gap: 8px;
+    h6 {
+      font-size: 1.25rem;
+      color: var(--collection-semantic-img-text-icon);
+    }
+    p {
+      height: auto;
+      color: var(--collection-semantic-img-text-icon);
+    }
+  }
+  .order-box {
+    padding: 60px 80px 30px 80px;
+  }
+  .order-content {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .btn-order {
+    width: 40%;
+  }
+  .btn .go-top {
+    right: 50px;
+    bottom: 100px;
+  }
+}
+
+/* --------------------------------------- */
+/* 576px ↓：一般手機 (.mobile) */
+@media screen and (max-width: 576px) {
+  .slideshow-container,
+  .mySlides {
+    height: 400px;
+  }
+  .nav-bar {
+    .nav {
+      padding: 5px;
+    }
+  }
+  .title-name {
+    font-size: 1.5rem;
+  }
+  .text-content {
+    padding-left: 45px;
+    h4 {
+      font-size: 2.375rem;
+    }
+    h5 {
+      font-size: 1.375rem;
+    }
+  }
+  .list-title {
+    height: auto;
+    p {
+      width: 100%;
+    }
+  }
+  .item {
+    .list-img {
+      width: 320px;
+      .vector {
+        width: 320px;
+      }
+    }
+  }
+
+  .tag-h .title-name-white,
+  .title-name {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .usage-box {
+    width: 100%;
+  }
+  .usage-list {
+    flex-wrap: wrap;
+    gap: 0px;
+  }
+  .usage-icon-list {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 24px 20px;
+  }
+  .usage-box {
+    padding-top: 30px;
+  }
+  .usage-icon {
+    flex-direction: row;
+    gap: 35px;
+    &::after {
+      padding: 40px 20px;
+      left: 10%;
+      width: 23%;
+      top: -10px;
+    }
+    .img-2 {
+      width: 90px;
+      height: auto;
+      flex-shrink: 0;
+    }
+  }
+
+  .usage-text {
+    align-items: flex-start;
+    text-align: left;
+    gap: 8px;
+    padding-left: 25px;
+    h6 {
+      text-align: left;
+    }
+    p {
+      height: auto;
+      text-align: left;
+    }
+  }
+  .order-box {
+    padding: 30px 60px;
+  }
+  .container .btn {
+    padding-bottom: 20px;
+  }
+
+  .btn-order {
+    padding: 15px 40px;
+    p {
+      font-size: 1.125rem;
+      font-weight: 100;
+    }
+  }
+
+  .btn .go-top {
+    bottom: 75px;
+    right: 20px;
+  }
+}
+/* 手機中的主流寬度（例如 iPhone SE、iPhone 12 mini） */
+@media screen and (max-width: 500px) {
+  .usage-icon {
+    &::after {
+      padding: 35px 20px;
+      left: 13%;
+      width: 27%;
+      top: 0px;
+    }
+  }
+  .nav-bar {
+    .logo {
+      svg {
+        width: 230px;
+        height: auto;
+      }
+    }
+  }
+  .menu-popup {
+    &.show {
+      margin-top: 18px;
+    }
+  }
+}
+/* --------------------------------------- */
+/* 440px ↓：小手機 (SE、小尺寸手機) (.small-mobile) */
+@media screen and (max-width: 440px) {
+  .text-content {
+    padding-left: 55px;
+    h4 {
+      font-size: 1.5rem;
+    }
+    h5 {
+      font-size: 1rem;
+    }
+  }
+  .item {
+    .list-img {
+      width: 290px;
+      .vector {
+        width: 290px;
+      }
+    }
+  }
+  .usage-icon {
+    &::after {
+      left: 15%;
+      width: 31%;
+      top: 10px;
+    }
+  }
+  .usage-text {
+    padding-left: 15px;
+  }
+
+  .order-content {
+    .left,
+    .right {
+      width: 100%;
+    }
+  }
+  .btn-order {
+    width: 55%;
+  }
+  .btn .go-top {
+    bottom: 73px;
+    right: 18px;
+  }
+  .nav-bar {
+    .logo {
+      svg {
+        width: 200px;
+        height: auto;
+      }
+    }
+  }
+  .menu-popup {
+    &.show {
+      margin-top: 12px;
+    }
+  }
+}
+/* --------------------------------------- */
+/* 379px ↓：小手機 (SE、小尺寸手機) (.small-mobile) */
+@media screen and (max-width: 379px) {
+  .nav-bar {
+    padding: 20px 10px;
+    .logo {
+      svg {
+        width: 200px;
+        height: auto;
+      }
+    }
+  }
+  .menu-popup {
+    &.show {
+      margin-top: 12px;
+    }
+  }
+}

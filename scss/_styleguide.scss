@@ -1,0 +1,88 @@
+:root {
+  --font-styles-font-family: "Figtree", Helvetica;
+  --font-styles-16-font-weight: 400;
+  --font-styles-16-font-size: 1rem;
+  --font-styles-16-letter-spacing: 0.01em;
+  --font-styles-16-line-height: 1.5;
+  --font-styles-16-font-style: normal;
+  --font-styles-24-font-weight: 700;
+  --font-styles-24-font-size: 1.5rem;
+  --font-styles-24-letter-spacing: 0.015em;
+  --font-styles-24-line-height: 1.4;
+  --font-styles-24-font-style: normal;
+  --font-styles-72-font-weight: 700;
+  --font-styles-72-font-size: 4.5rem;
+  --font-styles-72-letter-spacing: 0em;
+  --font-styles-72-line-height: 1.2;
+  --font-styles-72-font-style: normal;
+  --font-styles-32-font-weight: 400;
+  --font-styles-32-font-size: 2rem;
+  --font-styles-32-letter-spacing: 0.01em;
+  --font-styles-32-line-height: 1.3;
+  --font-styles-32-font-style: normal;
+  --font-styles-bold-18-font-weight: 700;
+  --font-styles-bold-18-font-size: 1.125rem;
+  --font-styles-bold-18-letter-spacing: 0.015em;
+  --font-styles-bold-18-line-height: 1.6;
+  --font-styles-bold-18-font-style: normal;
+  --collection-color-brand-orange-700: rgba(223, 99, 10, 1);
+  --collection-color-brand-orange-500: rgba(230, 129, 27, 1);
+  --collection-color-brand-orange-400: rgba(250, 148, 47, 1);
+  --collection-color-neutral-white: rgba(255, 255, 255, 1);
+  --collection-color-neutral-black: rgba(0, 0, 0, 1);
+  --collection-color-function-red: rgba(206, 67, 17, 1);
+  --collection-color-function-blue-800: rgba(9, 46, 94, 1);
+  --collection-color-function-blue-100: rgba(224, 241, 255, 1);
+  --collection-color-function-blue-200: rgba(105, 162, 235, 1);
+  --collection-color-function-yellow: rgba(255, 227, 71, 1);
+  --collection-color-dark-brown-600: rgba(142, 84, 38, 1);
+  --collection-color-dark-brown-200: rgba(255, 240, 219, 1);
+  --collection-semantic-logo: var(--collection-color-brand-orange-500);
+  --collection-semantic-nav-bg: var(--collection-color-neutral-white);
+  --collection-semantic-img-text-icon: var(--collection-color-neutral-white);
+  --collection-semantic-h3-text: var(--collection-color-brand-orange-500);
+  --collection-semantic-p: var(--collection-color-neutral-black);
+  --collection-semantic-price: var(--collection-color-function-red);
+  --collection-semantic-using: var(--collection-color-brand-orange-500);
+  --collection-semantic-btn-default: var(--collection-color-brand-orange-500);
+  --collection-semantic-btn-hover: var(--collection-color-brand-orange-400);
+  --collection-semantic-btn-click: var(--collection-color-brand-orange-700);
+  --collection-semantic-model-bg-moon: var(
+    --collection-color-function-blue-800
+  );
+  --collection-semantic-model-circular: var(
+    --collection-color-function-blue-100
+  );
+  --collection-semantic-model-bg-sun: var(--collection-color-function-blue-200);
+  --collection-semantic-model-icon: var(--collection-color-function-yellow);
+  --collection-semantic-menu: var(--collection-color-neutral-black);
+  --collection-semantic-btn-text: var(--collection-color-neutral-white);
+  --collection-semantic-using-h3-text: var(--collection-color-neutral-white);
+  --collection-semantic-container-bg: var(--collection-color-neutral-white);
+  --collection-semantic-using-bg: var(--collection-color-brand-orange-500);
+}
+
+/* Light 模式 */
+.one-page-light[data-collection-mode="light"] {
+  --collection-semantic-logo: var(--collection-color-brand-orange-500);
+  --collection-semantic-h3-text: var(--collection-color-brand-orange-500);
+  --collection-semantic-using: var(--collection-color-brand-orange-500);
+  --collection-semantic-btn-default: var(--collection-color-brand-orange-500);
+  --collection-semantic-btn-hover: var(--collection-color-brand-orange-400);
+  --collection-semantic-btn-click: var(--collection-color-brand-orange-700);
+  --collection-semantic-container-bg: var(--collection-color-neutral-white);
+  --collection-semantic-using-bg: var(--collection-color-brand-orange-500);
+  --collection-semantic-nav-bg: var(--collection-color-neutral-white);
+}
+/* Dark 模式 */
+.one-page-light[data-collection-mode="dark"] {
+  --collection-semantic-logo: var(--collection-color-dark-brown-600);
+  --collection-semantic-h3-text: var(--collection-color-dark-brown-600);
+  --collection-semantic-using: var(--collection-color-dark-brown-600);
+  --collection-semantic-btn-default: var(--collection-color-dark-brown-600);
+  --collection-semantic-btn-hover: var(--collection-color-brand-orange-700);
+  --collection-semantic-btn-click: var(--collection-color-brand-orange-500);
+  --collection-semantic-container-bg: var(--collection-color-dark-brown-200);
+  --collection-semantic-using-bg: var(--collection-color-dark-brown-600);
+  --collection-semantic-nav-bg: var(--collection-color-dark-brown-200);
+}
