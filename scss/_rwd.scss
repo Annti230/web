@@ -138,6 +138,10 @@
   .menu-popup.show {
     display: flex;
   }
+  .prev,
+  .next {
+    display: none;
+  }
 
   .text-content {
     padding-left: 55px;
