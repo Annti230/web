@@ -358,13 +358,18 @@
 /* 440px ↓：小手機 (SE、小尺寸手機) (.small-mobile) */
 @media screen and (max-width: 440px) {
   .text-content {
-    padding-left: 55px;
     h4 {
-      font-size: 1.5rem;
+      font-size: 1.875rem;
     }
     h5 {
-      font-size: 1rem;
+      font-size: 1.125rem;
     }
+  }
+  .prev {
+    left: 0px;
+  }
+  .next {
+    right: 0px;
   }
   .item {
     .list-img {
@@ -409,6 +414,25 @@
   .menu-popup {
     &.show {
       margin-top: 12px;
+    }
+  }
+  .dots {
+    .dot {
+      height: 12px;
+      width: 12px;
+      margin: 0 5px;
+      background-color: var(--collection-semantic-img-text-icon);
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease, transform 0.3s ease;
+      opacity: 0.5;
+      &.active {
+        height: 15px;
+        width: 15px;
+        background-color: var(--collection-semantic-img-text-icon);
+        transform: scale(1.2);
+        opacity: 0.8;
+      }
     }
   }
 }

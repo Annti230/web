@@ -69,7 +69,8 @@
   color: var(--collection-semantic-menu);
   white-space: nowrap;
   @include font-styles-16;
-  &:hover {
+  &:hover,
+  &:active {
     border-bottom: 3px solid var(--collection-semantic-logo);
   }
 }
@@ -307,7 +308,8 @@
   transform: translateY(-50%);
   transition: opacity 0.3s ease;
   opacity: 0.6;
-  &:hover {
+  &:hover,
+  &:active {
     opacity: 1;
   }
 }
@@ -557,7 +559,8 @@
   }
 
   // 滑鼠移入時讓::after套用 jelly 動畫
-  &:hover::after {
+  &:hover::after,
+  &:active::after {
     animation: jellyWave 0.8s ease-in-out;
     transform: translateX(-50%) translateY(0);
     transform-origin: center;
@@ -709,7 +712,8 @@
     @include font-styles-24;
     font-size: 1.25rem;
   }
-  &:hover {
+  &:hover,
+  &:active {
     background-color: var(--collection-semantic-btn-hover);
   }
 }
@@ -731,7 +735,8 @@
     pointer-events: auto;
     transform: translateY(0); /* 向上滑入 */
   }
-  &:hover {
+  &:hover,
+  &:active {
     transform: scale(1.2) translateY(0); /* hover 放大，但保持位置 */
   }
 }
