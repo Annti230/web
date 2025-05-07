@@ -33,6 +33,10 @@ $(document).ready(function () {
     });
   });
 
+  // =========================
+  // Mode 切換
+  // =========================
+
   // Mode 切換 + ICON 切換
   const $body = $(".one-page-light");
   const $icons = document.querySelectorAll(".img-2");
@@ -162,9 +166,9 @@ $(document).ready(function () {
     startAutoSlide();
   }
   // 暫停自動輪播，方便測試
-  function stopAutoSlide() {
-    clearInterval(slideTimer);
-  }
+  // function stopAutoSlide() {
+  //   clearInterval(slideTimer);
+  // }
 
   // 初始化
   if (slides.length > 0) {
@@ -183,8 +187,44 @@ $(document).ready(function () {
         currentSlide(index);
       });
     });
-    stopAutoSlide(); // 暫停自動輪播，方便測試
-  }
+    //stopAutoSlide(); // 暫停自動輪播，方便測試
 
-  // 漢堡選單
+    // 👉 手機滑動支援
+    let startX = 0;
+    let endX = 0;
+
+    const touchArea = document.querySelector(".slideshow-container");
+
+    // 設定 touchstart 時阻止預設行為（需要 passive: false）
+    touchArea.addEventListener(
+      "touchstart",
+      (e) => {
+        startX = e.touches[0].clientX;
+        // 必須搭配 passive: false
+        e.preventDefault();
+      },
+      { passive: false }
+    );
+    touchArea.addEventListener(
+      "touchend",
+      (e) => {
+        endX = e.changedTouches[0].clientX;
+        handleSwipe();
+      },
+      { passive: true }
+    );
+
+    function handleSwipe() {
+      const diff = endX - startX;
+      const threshold = 50; // 滑動最小距離才會觸發（避免誤觸）
+
+      if (Math.abs(diff) > threshold) {
+        if (diff > 0) {
+          plusSlides(-1); // 往右滑，顯示上一張
+        } else {
+          plusSlides(1); // 往左滑，顯示下一張
+        }
+      }
+    }
+  }
 });
