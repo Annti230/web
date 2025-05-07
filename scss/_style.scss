@@ -226,6 +226,7 @@
   height: 666px;
   margin: auto;
   overflow: hidden;
+  touch-action: pan-y; /* 允許水平滑動 */
 }
 
 .mySlides {
