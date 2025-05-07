@@ -251,6 +251,7 @@ a {
   height: 666px;
   margin: auto;
   overflow: hidden;
+  touch-action: pan-y; /* 允許水平滑動 */
 }
 
 .mySlides {
@@ -1152,7 +1153,7 @@ footer p {
   }
   .btn-order p {
     font-size: 1.125rem;
-    font-weight: 100;
+    font-weight: 400;
   }
   .btn .go-top {
     bottom: 75px;
