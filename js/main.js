@@ -196,23 +196,34 @@ $(document).ready(function () {
     const touchArea = document.querySelector(".slideshow-container");
 
     // 設定 touchstart 時阻止預設行為（需要 passive: false）
-    touchArea.addEventListener(
-      "touchstart",
-      (e) => {
-        startX = e.touches[0].clientX;
-        // 必須搭配 passive: false
-        e.preventDefault();
-      },
-      { passive: false }
-    );
-    touchArea.addEventListener(
-      "touchend",
-      (e) => {
-        endX = e.changedTouches[0].clientX;
-        handleSwipe();
-      },
-      { passive: true }
-    );
+    if (touchArea) {
+      touchArea.addEventListener(
+        "touchstart",
+        (e) => {
+          startX = e.touches[0].clientX;
+          e.preventDefault(); // 搭配 passive: false
+        },
+        { passive: false }
+      );
+
+      touchArea.addEventListener(
+        "touchend",
+        (e) => {
+          endX = e.changedTouches[0].clientX;
+          const diff = endX - startX;
+          const threshold = 50;
+
+          if (Math.abs(diff) > threshold) {
+            if (diff > 0) {
+              plusSlides(-1);
+            } else {
+              plusSlides(1);
+            }
+          }
+        },
+        { passive: true }
+      );
+    }
 
     function handleSwipe() {
       const diff = endX - startX;
